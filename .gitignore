@@ -1,0 +1,31 @@
+# Hugo build output
+/public/
+/resources/
+
+# Logs
+*.log
+
+# OS generated files (macOS)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / NPM (if later using frontend tooling)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python virtualenv (if ever used for scripts)
+venv/
+.env/

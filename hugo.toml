@@ -1,0 +1,26 @@
+baseURL = "https://peakwaveoutdoor.com/"
+languageCode = "en-us"
+title = "PeakWave Outdoor"
+theme = "ananke"
+enableRobotsTXT = true
+paginate = 12
+
+[params]
+  # 常用 Ananke 参数，可按需增减
+  favicon = "/images/favicon.png"
+  description = "Thoughtfully selected outdoor gear."
+  github = "https://github.com/outdoor-products/peakwaveoutdoor"
+
+[menu]
+  [[menu.main]]
+    name = "Products"
+    url  = "/gear/"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 20
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 30
