@@ -15,7 +15,7 @@ enableRobotsTXT = true
     name = "Products"
     url  = "/gear/"
     weight = 10
-  [[menu.event]]
+  [[menu.main]]
     name = "Events"
     url  = "/event/"
     weight = 20
