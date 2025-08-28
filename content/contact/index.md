@@ -2,4 +2,4 @@
 title: "Contact"
 draft: false
 ---
-Email us at sale@peakwaveoutdoor.com
+Email us at sales@peakwaveoutdoor.com
