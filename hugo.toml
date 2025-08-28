@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "PeakWave Outdoor"
 theme = "ananke"
 enableRobotsTXT = true
-paginate = 12
 
 [params]
   # 常用 Ananke 参数，可按需增减
