@@ -26,6 +26,10 @@ enableRobotsTXT = true
     url  = "/event/"
     weight = 20
   [[menu.main]]
+    name = "Blog"
+    url  = "/post/"
+    weight = 25
+  [[menu.main]]
     name = "About"
     url  = "/about/"
     weight = 30

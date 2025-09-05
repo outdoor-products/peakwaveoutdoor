@@ -13,7 +13,7 @@ summary: "Features a new dual-layer construction to prevent tearing and puncture
 - Provides portable insulation and warmth.
 
 ## Specifications
-![Mountain Spring Foam Pad Folded](/images/ms_form_pad_fold.png)
+![Mountain Spring Foam Pad Folded](/images/ms_form_pad.png)
 
 ### Falcon(Short)
 <div class="gear-table">
