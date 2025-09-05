@@ -1,0 +1,46 @@
+/* 4:3 宽高比样式 */
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.aspect-ratio--4x3 {
+  padding-bottom: 75%; /* 4:3 比例 = 3/4 = 0.75 = 75% */
+}
+
+.aspect-ratio--object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 商品详情页面表格字体大小 - 使用更高优先级选择器 */
+.gear-table,
+.gear-table table,
+.gear-table th,
+.gear-table td {
+  font-size: 1.25rem !important; /* 与页面正文 f4 类保持一致，使用 !important 确保优先级 */
+}
+
+.gear-table th,
+.gear-table td {
+  padding: 0.5rem 1rem; /* 左右内边距增加到1rem，上下保持0.5rem */
+}
+
+.gear-table th {
+  font-weight: 600;
+  background-color:transparent;
+}
+
+/* 表格列间距调整 */
+.gear-table table {
+  border-collapse: separate; /* 分离边框模式，允许列间距 */
+  border-spacing: 0.5rem 0; /* 水平间距0.5rem，垂直间距0 */
+}

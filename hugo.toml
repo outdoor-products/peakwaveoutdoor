@@ -4,11 +4,17 @@ title = "PeakWave Outdoor"
 theme = "ananke"
 enableRobotsTXT = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   # 常用 Ananke 参数，可按需增减
   favicon = "/images/favicon.png"
   description = "Thoughtfully selected outdoor gear."
   github = "https://github.com/outdoor-products/peakwaveoutdoor"
+  custom_css = ["custom.css"]
 
 [menu]
   [[menu.main]]
