@@ -15,6 +15,11 @@ enableRobotsTXT = true
   description = "Thoughtfully selected outdoor gear."
   github = "https://github.com/outdoor-products/peakwaveoutdoor"
   custom_css = ["custom.css"]
+  mainSections = ["gear"]  # 指定主要内容部分
+  recent_posts_number = 10  # 显示最近10篇文章
+
+[params.ananke]
+  show_recent_posts = true  # 启用最近文章显示
 
 [menu]
   [[menu.main]]
