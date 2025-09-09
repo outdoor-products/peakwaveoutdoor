@@ -1,8 +1,10 @@
 baseURL = "https://peakwaveoutdoor.com/"
-languageCode = "en-us"
-title = "PeakWave Outdoor"
+languageCode = "en-gb"
+title = "TANWA 探屲"
 theme = "ananke"
 enableRobotsTXT = true
+# 让 Ananke 在生产环境输出可索引的 robots meta（配合 CI 里设置 HUGO_ENV，见第3步）
+# 参考：Ananke 会根据 HUGO_ENV 切换 index/noindex。 
 
 [markup]
   [markup.goldmark]
@@ -10,16 +12,35 @@ enableRobotsTXT = true
       unsafe = true
 
 [params]
-  # 常用 Ananke 参数，可按需增减
   favicon = "/images/favicon.png"
-  description = "Thoughtfully selected outdoor gear."
-  github = "https://github.com/outdoor-products/peakwaveoutdoor"
+  site_name = "TANWA 探屲"
+  slogan = "When mountains open"
+  # 站点级描述（用于 meta/OG/Twitter/JSON-LD）
+  description = """Welcome to TANWA 探屲 — an outdoor brand born from real adventures! We are a team based in the UK, comprising hikers, campers, and scramblers who have spent years exploring wild places across Britain and beyond. Now, we bring that experience into curating and selling high-quality, ultralight backpacking gear — gear that we use, trust, and test ourselves.
+
+Our name, 探屲 (Tanwa), is derived from two Chinese characters: “探” meaning to explore, and “屲” — a rare word for a valley hidden between mountains. It reflects our belief in quiet wilderness, thoughtful movement, and shelter in wild places. 
+
+We source gear from top-tier Chinese outdoor brands, chosen for their durability, minimal weight, and reliability in UK conditions. We also run guided events and test trips, where you can experience our equipment in the field. At TANWA, we believe good gear should carry you further — when mountains open, there lies the valley."""
+  # 关键词（搜索引擎几乎不再使用 keywords，但可用于站内/社媒工具）
+  keywords = [
+    "Tanwa","Tanlai","UKOutdoor","UltralightBackpacking","UltralightGear","BackpackingGear",
+    "ChineseOutdoorBrand","LightweightCamping","WildCampingUK","MinimalistHiking",
+    "OutdoorStartup","UKOutdoorGear","ExploreMore","MountainGear","HikeUK",
+    "BackcountryGear","CampSetup","TestedInTheWild","WildernessReady","ModernExplorers"
+  ]
+
+  # 用于 Hugo 内置的社交模板字段
+  [params.social]
+    twitter = ""   # 如暂时没有，可先留空或填品牌账号
+    github  = ""
+
+  # Ananke 相关
   custom_css = ["custom.css"]
-  mainSections = ["gear"]  # 指定主要内容部分
-  recent_posts_number = 10  # 显示最近10篇文章
+  mainSections = ["gear"]
+  recent_posts_number = 10
 
 [params.ananke]
-  show_recent_posts = true  # 启用最近文章显示
+  show_recent_posts = true
 
 [menu]
   [[menu.main]]

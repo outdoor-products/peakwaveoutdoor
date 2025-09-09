@@ -1,0 +1,44 @@
+{{- $site := .Site -}}
+{{- $p := $site.Params -}}
+
+<!-- Slogan / Keywords -->
+<meta name="application-name" content="{{ $site.Title }}">
+<meta name="slogan" content="{{ with $p.slogan }}{{ . }}{{ end }}">
+{{- if $p.keywords }}
+  <meta name="keywords" content="{{ delimit $p.keywords ", " }}">
+{{- end }}
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Locale / Site name for OG -->
+<meta property="og:site_name" content="{{ with $p.site_name }}{{ . }}{{ else }}{{ $site.Title }}{{ end }}">
+<meta property="og:locale" content="en_GB">
+
+<!-- Prefer Hugo 内置 OpenGraph / Twitter（若主题未启用，可解注释） -->
+{{/* {{ template "_internal/opengraph.html" . }} */}}
+{{/* {{ template "_internal/twitter_cards.html" . }} */}}
+
+<!-- JSON-LD: Organization/Brand -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization","Brand"],
+  "name": {{ jsonify (or $p.site_name $site.Title) }},
+  "alternateName": "TANWA",
+  "slogan": {{ jsonify $p.slogan }},
+  "description": {{ jsonify $p.description }},
+  "url": {{ jsonify $site.BaseURL }},
+  "logo": {{ jsonify (printf "%simages/favicon.png" $site.BaseURL) }},
+  "foundingLocation": "United Kingdom",
+  "sameAs": [
+    {{- with $p.social.twitter -}}
+      {{ printf "\"https://twitter.com/%s\"" . -}}
+    {{- end -}}
+    {{- if and $p.social.twitter $p.github }},{{ end -}}
+    {{- with $p.github -}}
+      {{ printf "\"https://github.com/%s\"" . -}}
+    {{- end -}}
+  ]
+}
+</script>
