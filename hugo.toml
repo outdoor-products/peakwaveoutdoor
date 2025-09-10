@@ -13,6 +13,7 @@ enableRobotsTXT = true
 
 [params]
   favicon = "/images/favicon.png"
+  site_logo = "/images/favicon.png"  # logo
   site_name = "TANWA 探屲"
   slogan = "When mountains open"
   # 站点级描述（用于 meta/OG/Twitter/JSON-LD）
